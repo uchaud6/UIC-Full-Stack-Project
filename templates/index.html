@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSCS Faculty Information Search</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="icon" href="../static/logo.png">
+</head>
+<body>
+  <header>
+
+    <div class="container">
+        <div class="flex-container">
+            <section class="page-header">
+                <img src="../static/logo.png" alt="UIC">
+                <div class="logo-container">
+                  <p>university of</p>
+                  <p>illinois chicago</p>
+                </div>
+            </section>
+            <nav>
+                <ul class="upper-links">
+                    <div>
+                        <li><a href='#'>UIC.edu</a></li>
+                        <li><a href='#'>Campus Map</a></li>
+                    </div>
+                    <div>
+                      <li><a href='#'>learning center</a></li>
+                      <li><a href='#'>courses</a></li>
+                      <li><a href='#'>intranet</a></li>
+                      <li><a href='#'>las.uic.edu</a></li>
+                      <li><a href='#'>+Give</a></li>
+                      <li class="magnify"><a href='#'><div class="circle"><div class="line"></div></div></a></li>
+                    </div>
+                </ul>
+                <ul class="lower-links">
+                    <div>
+                        <li><a href='#'>people</a></li>
+                        <li><a href='#'>seminars</a></li>
+                        <li><a href='#'>news</a></li>
+                        <li><a href='#'>grad</a></li>
+                        <li><a class="undergrad" href='#'>undergrad</a></li>
+                        <li><a href='#'>programs</a></li>
+                        <li><a href='#'>organizations</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="container">
+      <section class="dept-header">
+        <h1>Dept of Math, Stat, & Comp Sci</h1>
+        <h3>College of Liberal Arts and Sciences</h3>
+      </section>
+    </div>
+  </header>
+
+<main>
+
+
+  <header>
+    <div class="background-container">
+      <div class="background-text">
+        <h2>MSCS Faculty Search</h2>
+      </div>
+    </div>
+  </header>
+
+  
+  
+  <form name="faculty", action="/faculty", method="post">
+    <div class="form-container">
+      <section>
+        <p>Please enter either of the fields below to search for MSCS faculty.</p>
+      </section>
+      <section class="input-fields">
+        <div class="email-container">
+          <label>Enter an Email for Desired Faculty:</label>
+          <input type="text" name="email" id="email" placeholder="Ex. jbergen@uic.edu">
+        </div>
+        <div class="time-container">
+          <label>Enter Time of Teaching for Desired Faculty:</label>
+          <input type="text" name="time" id="time" placeholder="Ex. 12:35am, 2pm, 9am">
+        </div>
+        <div class="submit-container">
+          <input class="search-button" type="submit" value="Search">
+        </div>
+      </section>
+      <section class="results-container">
+        <h2>{{user_input}}</h2>
+        <ul>{{faculty_info|safe}}</ul>
+      </section>
+    </div>
+  </form>
+</main>
+
+</body>
+</html>
