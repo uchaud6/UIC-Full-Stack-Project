@@ -1,0 +1,242 @@
+/* *{} mark-up for styling reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #363636;
+}
+img{
+    width: 50px;
+    height: 50px
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+input{
+    width: 25%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    color: black;
+}
+
+input:focus{
+    outline: none;
+    background-color:bisque;
+}
+
+
+
+.container{
+    margin: 0 auto;
+    padding: 0em 10em;
+}
+.container:nth-of-type(1){
+    background-color: rgb(240, 240, 240);
+
+}
+.container:nth-of-type(2){
+    background-color: #001e62;
+
+}
+
+.background-container{
+    background-image: url('../static/chicago.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 35vh;
+    padding: 0em 10em;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.flex-container{
+    padding: 2em 0em;
+    display: flex;
+}
+.page-header{
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    width: 29%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.undergrad, nav a:hover{
+    padding-bottom: 7px;
+    border-bottom: 4px rgb(191, 2, 2) solid;
+}
+
+
+.upper-links{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    color: #001e62;
+    margin-left: 30px;
+    font-size: 13px;
+}
+.upper-links div{
+    display: flex;
+    gap: 15px;
+    
+}
+.magnify{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 16px;
+    height: 16px;
+    border: 2.3px solid #001e62;
+    border-radius: 50px;
+    display: flex;
+    align-items: end;
+}
+.line{
+    width: 75%;
+    height: 15%;
+    border-radius: 15px;
+    background-color: #001e62;
+    position: relative;
+    left: 100%;
+    transform: rotate(30deg);
+}
+.lower-links{
+    display: flex;
+    justify-content: space-between;
+    color: #001e62;
+    margin-left: 30px;
+}
+.lower-links div{
+    display: flex;
+    gap: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.logo-container{
+    font-size: 0.75em;
+    font-weight: bolder;
+    color: #001e62;
+    align-self: center;
+    text-transform: uppercase;
+}
+.logo-container p:first-child{
+    letter-spacing: 0.25em;
+}
+.logo-container p:last-child{
+    font-size: 22px;
+}
+
+.dept-header{
+    color: white;
+    padding: 0.5em 0em;
+}
+
+.dept-header h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.dept-header h3{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+.background-text{
+    background: rgba(0,0,0,50%);
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+
+.input-fields{
+    width: 50%;
+    margin-top: 0px;
+}
+
+.form-container{
+   padding: 1.5em 10em;
+}
+
+.form-container p{
+    font-size: 18px;
+}
+
+.email-container{
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.time-container{
+    font-size: 14px;
+
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.submit-container{
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.submit-container input{
+    width: 15%;
+    color: #363636;
+}
+
+
+.results-container{
+    margin-top: 2.5em;
+  
+}
+.results-container h3{
+    font-size: 14px;
+  
+}
+.results-container ul{
+    margin-top: 2.5em;
+    margin-left: 1%;
+    list-style-type: disc;
+}
+
+.results-container ul li{
+  color: #d50032;
+  margin-bottom: 1em;
+}
+.results-container a{
+  color: #001e62;
+  text-decoration: underline;
+}
