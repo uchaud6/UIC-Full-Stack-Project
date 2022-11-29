@@ -8,4 +8,4 @@ Website Demo!
 Try it out for yourself!
 Visit https://replit.com/@UmarChaudhry2/UICflaskproject#main.py and click the green "Run" button
 then just paste this url, https://UICflaskproject.umarchaudhry2.repl.co, into a new tab on your browser
-to acsess the same website seen above!
+to access the same website seen above!
