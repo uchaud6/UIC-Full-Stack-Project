@@ -120,7 +120,7 @@ def scrape(url):
     # we can now write and close to a json file by dumping
     # 'data' to that file
   json_writer = open("faculty.json", "w")
-  json.dump(data, json_writer)
+  json.dump(data, json_writer, indent=1)
   json_writer.close()
 
 
